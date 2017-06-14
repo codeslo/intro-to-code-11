@@ -1,4 +1,7 @@
+// in jQuery everything is contained in a document.ready function
 $(document).ready(function(){
+	// store an array of video data here
+	var videoArray = [];
 
 
 	loadVideo();
@@ -15,7 +18,7 @@ $(document).ready(function(){
 		// enable last button
 	});
 
-	// function to load videos
+	// function to load videos this is a jQuery ajax request
 	function loadVideo()
 	{
 		var myKey = '';
@@ -39,7 +42,7 @@ $(document).ready(function(){
 
 		
 
-	});
+	}); // this is the end of document.ready
 		
 
 	
